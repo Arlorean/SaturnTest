@@ -1,6 +1,6 @@
 # Rapid Data Analysis in F#
 
-This is a transcript of the excellent code sample on [YouTube](https://www.youtube.com/playlist?list=PLlzAi3ycg2x0_7KdzjwsR-6b6yuRQ8wBS)
+This is a transcript of the excellent F# [Saturn](https://saturnframework.org/)/[Giraffe](https://giraffe.wiki/) code sample on [YouTube](https://www.youtube.com/playlist?list=PLlzAi3ycg2x0_7KdzjwsR-6b6yuRQ8wBS)
 by [Isaac Abraham](https://github.com/isaacabraham)
 of [Compositional IT](https://www.compositional-it.com/).
 
