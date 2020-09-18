@@ -2,11 +2,10 @@ module Api
 
 open FSharp.Data
 open System
-
-type Daily = CsvProvider<"../COVID-19/csse_covid_19_data/csse_covid_19_daily_reports/05-01-2020.csv">
+type Daily = CsvProvider<"COVID-19/csse_covid_19_data/csse_covid_19_daily_reports/05-01-2020.csv">
 
 let files = 
-    System.IO.Directory.GetFiles("../COVID-19/csse_covid_19_data/csse_covid_19_daily_reports", "*.csv")
+    System.IO.Directory.GetFiles("COVID-19/csse_covid_19_data/csse_covid_19_daily_reports", "*.csv")
     |> Seq.filter (fun filename -> System.IO.Path.GetFileNameWithoutExtension(filename).StartsWith("05"))
     |> Seq.map System.IO.Path.GetFullPath
 
