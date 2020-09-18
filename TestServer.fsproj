@@ -11,5 +11,7 @@
     <PackageReference Include="FSharp.Data" Version="3.3.3"/>
     <PackageReference Include="Saturn" Version="0.14.1"/>
     <PackageReference Include="Thoth.Json.Giraffe" Version="4.2.0"/>
+    <PackageReference Include="Zanaptak.TypedCssClasses" Version="0.4.0"/>
+    <PackageReference Include="XPlot.Plotly" Version="3.0.1"/>
   </ItemGroup>
 </Project>
