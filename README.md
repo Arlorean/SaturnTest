@@ -4,6 +4,8 @@ This is a transcript of the excellent F# [Saturn](https://saturnframework.org/)/
 by [Isaac Abraham](https://github.com/isaacabraham)
 of [Compositional IT](https://www.compositional-it.com/).
 
+This project is deployed [live on azure](https://saturntest-arlorean.azurewebsites.net/).
+
 ![](docs/HomePage.png)
 
 The F# [CsvProvider](https://fsharp.github.io/FSharp.Data/library/CsvProvider.html) relies on the [COVID-19](https://github.com/CSSEGISandData/COVID-19) repository
