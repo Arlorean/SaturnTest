@@ -3,3 +3,6 @@
 /bin
 /obj
 .fake
+*.user
+*.pubxml
+*.arm.json
