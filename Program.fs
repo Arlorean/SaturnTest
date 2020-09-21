@@ -18,7 +18,7 @@ module UiRoutes =
 
     [<Literal>]
     let BulmaUrl = "https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"
-    type Bulma = CssClasses<BulmaUrl>
+    type Bulma = CssClasses<BulmaUrl, Naming.PascalCase>
 
     let _classes attributes = attributes |> String.concat " " |> _class
 
@@ -28,16 +28,16 @@ module UiRoutes =
                 link [ _rel "stylesheet"; _href BulmaUrl ]
             ]
             body [] [
-                section [ _classes [ Bulma.hero; Bulma.``is-primary`` ] ] [
-                    div [ _class Bulma.``hero-body`` ] [
-                        div [ _class Bulma.container ] [
-                            h1 [ _class Bulma.title ] [ Text title ]
-                            h2 [ _class Bulma.subtitle ] [ Text subtitle ]
+                section [ _classes [ Bulma.Hero; Bulma.IsPrimary ] ] [
+                    div [ _class Bulma.HeroBody ] [
+                        div [ _class Bulma.Container ] [
+                            h1 [ _class Bulma.Title ] [ Text title ]
+                            h2 [ _class Bulma.Subtitle ] [ Text subtitle ]
                         ]
                     ]
                 ]
-                section [ _class Bulma.section ] [
-                    div [ _class Bulma.container]
+                section [ _class Bulma.Section ] [
+                    div [ _class Bulma.Container]
                         contents
                 ]
             ]
@@ -45,7 +45,7 @@ module UiRoutes =
 
     let countriesView = 
         createPage "COVID 19 Dataset" "Written in F#" [
-            table [ _class Bulma.table ] [
+            table [ _class Bulma.Table ] [
                 thead [] [
                     tr [] [
                         th [] [ Text "Country" ]
